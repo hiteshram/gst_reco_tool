@@ -10,6 +10,19 @@ books_file_path=""
 gst_file_path=""
 
 
+def clear_file_paths():
+    global books_file_path
+    global gst_file_path
+
+    books_path_label = Label(root,text = ' '*len(books_file_path)*3)
+    books_path_label.config(font=("Arial", 12))
+    books_path_label.place(x=240,y=50)
+
+    gst_path_label = Label(root,text = ' '*len(gst_file_path)*3)
+    gst_path_label.config(font=("Arial", 12))
+    gst_path_label.place(x=240,y=100)
+
+
 
 def get_books_file_path():
     global books_file_path
@@ -166,7 +179,7 @@ if __name__=="__main__":
     button.config(font=("Arial", 12))
     button.place(x=10,y=150)
 
-    button=Button(root,text="Clear")
+    button=Button(root,text="Clear",command=clear_file_paths)
     button.config(font=("Arial", 12))
     button.place(x=180,y=150)
 
