@@ -1,14 +1,14 @@
 37AAHFR1592H1ZY,"Raj Enterprises, Vijayawada"
 Source,Date,Narration,Gross Total,GST Source,Invoice Date,Invoice number,Invoice Value
-Books,2020-11-05,D-674-20/21,4995,GST Input,05/11/2020,D-674-20/21,4995
-Books,2020-11-13,D-721-20/21,1939,GST Input,13/11/2020,D-721-20/21,1939
-Books,2020-11-30,D-799-20/21,6040,GST Input,30/11/2020,D-799-20/21,6040
-Books,2020-11-30,D-798-20/21,8244,GST Input,30/11/2020,D-798-20/21,8244
+Books,2020-11-05,D-674-20/21,4995,GSTR2B Input,05/11/2020,D-674-20/21,4995
+Books,2020-11-13,D-721-20/21,1939,GSTR2B Input,13/11/2020,D-721-20/21,1939
+Books,2020-11-30,D-799-20/21,6040,GSTR2B Input,30/11/2020,D-799-20/21,6040
+Books,2020-11-30,D-798-20/21,8244,GSTR2B Input,30/11/2020,D-798-20/21,8244
 37AALFS1315D1ZG,"SrI Durga Enterprises, Vijayawada"
 Source,Date,Narration,Gross Total,GST Source,Invoice Date,Invoice number,Invoice Value
-Books,2020-11-07,9707,22003,GST Input,07/11/2020,9707,22003
+Books,2020-11-07,9707,22003,GSTR2B Input,07/11/2020,9707,22003
 ,"Neelesh Handlooms, Vijayawada"
 Source,Date,Narration,Gross Total,GST Source,Invoice Date,Invoice number,Invoice Value
 37AAHFS1378N1ZK,"Sai Santoshi Textiles, Vijayawada"
 Source,Date,Narration,Gross Total,GST Source,Invoice Date,Invoice number,Invoice Value
-Books,2020-11-25,VL1267,3120,GST Input,25/11/2020,VL1267,3120
+Books,2020-11-25,VL1267,3120,GSTR2B Input,25/11/2020,VL1267,3120
