@@ -1,7 +1,6 @@
 import openpyxl as op
 import os
 import pandas as pd
-import xlrd
 import shutil
 from tkinter import *
 from tkinter import filedialog
@@ -79,6 +78,7 @@ def generate_gst_reco():
         accounts_df=pd.DataFrame(accounts_wb.active.values)
         accounts_df.columns=accounts_df.iloc[2]
         accounts_df=accounts_df[3:-1]
+        accounts_df.fillna("                   ", inplace=True)
     else:
         print("Accounts file missing")
 
@@ -90,6 +90,7 @@ def generate_gst_reco():
             "Supply Attract Reverse Charge","Rate","Taxable Value","Integrated Tax","Central Tax","State/UT Tax","Cess",
             "GSTR-1/5 Period","GSTR-1/5 Filing Date","ITC Availability","Reason","Applicable Tax Rate","Source","IRN","IRN Date"]
         gstr_df=gstr_df[6:]
+        gstr_df.fillna("                     ",inplace=True)
     else:
         print("GSTR file missing")
 
