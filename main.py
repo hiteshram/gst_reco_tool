@@ -114,7 +114,12 @@ def generate_gst_reco():
         acc_df=pd.DataFrame(columns=["Source","Date","Narration","Gross Total"])
         
         for index,row in account_temp_df.iterrows():       
-            temp_df = {"Source": "Books", 'Date': row["Date"],"Narration":row["Narration"][8:].strip(),"Gross Total":row["Gross Total"]}
+            bill_number=row["Narration"]
+            if "bill" in bill_number or "Bill" in bill_number or "BILL" in bill_number:
+                bill_number=bill_number[8:].strip()
+            else:
+                bill_number=bill_number.strip()
+            temp_df = {"Source": "Books", 'Date': row["Date"],"Narration":bill_number,"Gross Total":row["Gross Total"]}
             acc_df=acc_df.append(temp_df,ignore_index=True)
 
         gstr_temp_df=gstr_df.loc[gstr_df['GSTIN of supplier']==key]
